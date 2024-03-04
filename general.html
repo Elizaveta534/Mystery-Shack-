@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/general.css">
+    
+	<script src="js/general.js" defer></script>
+  <title>Mystery Shack - квесты Санкт-Петербурга!</title>
+
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="icon" href="logo.png">
+	<script src="libs/gsap/gsap.min.js" defer></script>
+	<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+	<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+
+	<script src="js/app.js" defer></script>
+	<script>
+		function открытьСтраницу(адресСтраницы) {
+		  window.open(адресСтраницы, '_blank');
+		}
+	  </script>
+	    <script>
+			// Функция для плавной прокрутки к якорю
+			function scrollToAnchor(anchorId) {
+			  var anchor = document.getElementById(anchorId);
+			  if (anchor) {
+				anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
+			  }
+			}
+		  </script>
+	  </head>
+<body>
+	
+
+	<div class="wrapper">
+		<div class="content">
+			<header class="main-header">
+				
+				<div class="layers">
+					<div class="layer__header">
+						<div class="layers__title">Mystery Shack</div>
+					</div>
+					<div class="layer layers__base" style="background-image: url(img/layer-base.png);"></div>
+					<div class="layer layers__middle" style="background-image: url(img/layer-middle.png);"></div>
+					<div class="layer layers__front" style="background-image: url(img/layer-front.png);"></div>
+				</div>
+			</header>
+
+			<article class="main-article" style="background-image: url(img/dungeon.jpg);">
+				<div class="main-article__content">
+					<h2 class="main-article__header">Что такое Mystery Shack?</h2>
+					<p class="main-article__paragraph">Внимание, искатели приключений и адреналина!
+						Санкт-Петербург представляет вам невероятное сокровище - Мystery Shack!
+						Это место, где реальность сливается с фантазией!
+						Погрузитесь в увлекательные и захватывающие истории, где вы станете главными героями!
+						Откройте дверь в мир загадок и тайн, где каждый шаг может стать ключом к успеху.
+						Вас ожидают загадки, головоломки, секреты и неожиданные повороты!
+						Сможете ли вы раскрыть все тайны и выбраться во время?</p>
+						<button class="кнопка" onclick="прокруткаКБлоку('slide')">Прокрутка к блоку1</button>
+
+				</div>
+			</article>
+			<article class="main-article" style="background-image: url(img/black.jpg);">
+				<div class="main-article__content">
+									<!--Font Awesome CDN-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+	 <div class="container">
+ 
+		 <div class="slide">
+
+			 <div class="item" style="background-image: url(img/slider1.jpg);">
+				 <div class="content">
+					 <div class="name">Тайна поместья 666</div>
+					 <div class="des">На окраине города есть старое заброшенное поместье, о котором мало кто знает... А те, кто и знают немного, лишь по наслышке, говорят его хозяин заключил сделку с нечистой силой... И с тех пор он проклят...
+						А что на самом деле происходит в стенах этого поместья вам предстоит узнать, ведь в обратном случае вы останетесь там навсегда, заточенные в месте с тайнами этих стен...</div>
+						<div class="wrapper">
+							<button1 onclick="открытьСтраницу('house.html')">Забронировать</button1>
+						  </div>
+				 </div>
+			 </div>
+			 <div class="item" style="background-image: url(img/slider2.jpg);">
+				 <div class="content">
+					 <div class="name">Потерянные во времени</div>
+					 <div class="des">В лаборатории по исследованию аномальных явлений учеными была создана машина времени, которую периодически запускали в работу для достижения научных целей и открытий. Но один из сотрудников решает использовать ее для собственной выгоды.
+
+						Вам предстоит помешать изменить прошлое, не потеряться в далеком будущем и при этом постараться не уничтожить Вселенную, ведь эффект бабочки никто не отменял.</div>
+						<button1 onclick="открытьСтраницу('time.html')">Забронировать</button1>
+
+				 </div>
+			 </div>
+			 <div class="item" style="background-image: url(img/slider3.jpg);">
+				 <div class="content">
+					 <div class="name">Сплит</div>
+					 <div class="des">Диссоциативное расстройство идентичности – это расстройство, обладающее наличием нескольких личностей, переключающихся между собой.
+
+						Перед вами как раз такой человек, в нем обитает не менее двадцати трех личностей: какие-то из них добрые, а какие-то нет. Одна из личностей имеет склонности к похищению, кто-то придумывает дизайнерские наряды, а кому-то даже нет десяти лет... Но тем временем самая опасная личность находится в заточении.
+						
+						Не волнуйтесь, у вас будет время во всем разобраться... Скорее всего.</div>
+						<button1 onclick="открытьСтраницу('split.html')">Забронировать</button1>
+				 </div>
+			 </div>
+			 <div class="item" style="background-image: url(img/slider4.jpg);">
+				 <div class="content">
+					 <div class="name">ОНО</div>
+					 <div class="des">Пеннивайз или Оно – всеохватывающее зло разных форм и размеров, которое появляется раз в 27 лет в городе Дерри, штат Мэн. Его основная цель – убивать детей, а какой лучший способ достичь этой цели? Правильно, стать привлекательным клоуном. Потому что дети просто обожают клоунов! Серьезно, кто когда-нибудь думал, что клоуны не являются воплощением чистого зла?
+					 </div>
+					 <button1 onclick="открытьСтраницу('ono.html')">Забронировать</button1>
+				 </div>
+			 </div>
+			 <div class="item" style="background-image: url(img/slider5.jpg);">
+				 <div class="content">
+					 <div class="name">Судная ночь</div>
+					 <div class="des">Судная ночь – это единственная ночь в году, которая выпускает на волю самые опасные грехи человека. Ночь, когда кто-то охотник, а кто-то жертва. Этой ночью одни жаждут развлечений, остальные пытаются сохранить себе жизнь. До начала судной ночи еще час, по истечении которого спастись шанса не будет. Вам нужно бежать, но даже если у вас получится встать со стула, это еще не значит, что вы найдете выход. Тем более есть люди, которые очень не хотят вашего освобождения.
+
+						Сможете ли пройти мимо ваших стражников и выбраться живыми?</div>
+						<button1 onclick="открытьСтраницу('night.html')">Забронировать</button1>
+				 </div>
+			 </div>
+ 
+		 </div>
+ 
+		 <div class="buttn">
+			 <buttn class="prev"><i class="fa-solid fa-arrow-left"></i></buttn>
+			 <buttn class="next"><i class="fa-solid fa-arrow-right"></i></buttn>
+		 </div>
+ 
+	 </div>
+				
+				</div>
+			</article>
+
+
+</div>
+</article>
+
+			
+
+		</div>
+		
+	</div>
+	
+</div>
+</body>
+</html>
